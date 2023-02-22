@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "amqp-opensuse-async"
+version = "0.0.1"
+description = "Example script listening to rabbit.opensuse.org using aio_pika"
+authors = ["Dan Čermák <dcermak@suse.com>"]
+license = "MIT"
+readme = "readme.rst"
+packages = [{include = "amqp_opensuse_async"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aio-pika = "^9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
